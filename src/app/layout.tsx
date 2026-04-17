@@ -41,7 +41,6 @@ export const metadata: Metadata = {
         "student visa",
         "tourist visa",
         "business visa",
-        "work visa",
         "family visit visa",
         "permanent residency",
         "visa application",

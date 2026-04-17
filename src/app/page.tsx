@@ -20,7 +20,25 @@ export default function Home() {
             <AboutSection />
             <TestimonialsSection />
             <ContactSection />
-        </main>
+            <ContactSection />
+
+<div style={{ textAlign: "center", padding: "40px" }}>
+  <h2>Founder</h2>
+  <img src="/founder.jpg" width="150" style={{ borderRadius: "50%" }} />
+  <h3>Muhammad Abbas</h3>
+
+  <h2 style={{ marginTop: "30px" }}>Our Team</h2>
+
+  <img src="/1.jpg" width="120" style={{ borderRadius: "50%" }} />
+  <p>Team Member 1</p>
+
+  <img src="/2.jpg" width="120" style={{ borderRadius: "50%" }} />
+  <p>Team Member 2</p>
+</div>
+
+</main>
+    
     );
 }
+
 // ...existing code...
