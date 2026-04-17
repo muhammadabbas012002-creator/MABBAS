@@ -21,7 +21,6 @@ export default function Home() {
             <TestimonialsSection />
             <ContactSection />
             <ContactSection />
-
 <div style={{ textAlign: "center", padding: "60px 20px" }}>
   <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Founder</h2>
 
@@ -76,7 +75,6 @@ export default function Home() {
     </div>
 
   </div>
-
 </main>
     
     );
