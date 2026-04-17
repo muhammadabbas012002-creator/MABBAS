@@ -14,21 +14,21 @@ const AboutSection = () => {
             role: "Founder & CEO",
             description:
                 "15+ years in immigration consulting with expertise in student and work visas.",
-            avatar: "M",
+            avatar: "/founder.jpg",
         },
         {
             name: "Mustafa Aziz",
             role: "Senior Visa Consultant",
             description:
                 "Specializes in US, UK, and Canadian visa applications.",
-            avatar: "S",
+            avatar: "/1.jpg",
         },
         {
             name: "Muhammad Asim",
             role: "Travel Planning Head",
             description:
                 "Expert in complete travel solutions and itinerary planning.",
-            avatar: "A",
+            avatar: "/2.jpg",
         },
     ];
 
@@ -88,31 +88,41 @@ const AboutSection = () => {
                         <h3 className="text-xl font-bold text-foreground mb-4">
                             Meet Our Expert Team
                         </h3>
-                        {team.map((member, index) => (
-                            <div
-                                key={member.name}
-                                className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-soft border hover:shadow-card transition-all duration-300"
-                                style={{
-                                    borderColor: "hsl(var(--border))",
-                                }}
-                            >
-                                <div className="w-16 h-16 rounded-xl bg-gradient-hero flex items-center justify-center text-primary-foreground font-bold text-xl flex-shrink-0">
-                                    {member.avatar}
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-foreground">
-                                        {member.name}
-                                    </h4>
-                                    <p className="text-sm text-primary font-medium mb-2">
-                                        {member.role}
-                                    </p>
-                                    <p className="text-sm text-muted-foreground">
-                                        {member.description}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
+                        {/* Team Cards */}
+<div className="space-y-6">
+  <h3 className="text-xl font-bold text-foreground mb-4">
+    Meet Our Expert Team
+  </h3>
 
+  {team.map((member, index) => (
+    <div
+      key={member.name}
+      className="flex items-start gap-4 p-6 bg-card rounded-xl border"
+    >
+      {/* IMAGE */}
+      <img
+        src={member.avatar}
+        alt={member.name}
+        className="w-16 h-16 rounded-full object-cover"
+      />
+
+      {/* TEXT */}
+      <div>
+        <h4 className="font-bold text-foreground">
+          {member.name}
+        </h4>
+
+        <p className="text-sm text-primary font-medium mb-2">
+          {member.role}
+        </p>
+
+        <p className="text-sm text-muted-foreground">
+          {member.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
                         {/* Office Location */}
                         <div className="p-6 bg-secondary rounded-xl">
                             <h4 className="font-bold text-foreground mb-2">
