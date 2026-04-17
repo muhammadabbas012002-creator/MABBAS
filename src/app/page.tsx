@@ -21,7 +21,7 @@ export default function Home() {
             <TestimonialsSection />
             <ContactSection />
             <ContactSection />
-<div style={{ textAlign: "center", padding: "60px 20px" }}>
+ <div style={{ textAlign: "center", padding: "60px 20px" }}>
   <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Founder</h2>
 
   <img
@@ -40,14 +40,15 @@ export default function Home() {
 
   <h2 style={{ marginTop: "50px", fontSize: "26px" }}>Our Team</h2>
 
-  <div style={{
-    display: "flex",
-    justifyContent: "center",
-    gap: "40px",
-    marginTop: "30px",
-    flexWrap: "wrap"
-  }}>
-
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "40px",
+      marginTop: "30px",
+      flexWrap: "wrap"
+    }}
+  >
     <div style={{ textAlign: "center" }}>
       <img
         src="/1.jpg"
@@ -58,7 +59,7 @@ export default function Home() {
           objectFit: "cover"
         }}
       />
-      <p>Team Member 1</p>
+      <p>Mustafa Aziz</p>
     </div>
 
     <div style={{ textAlign: "center" }}>
@@ -71,13 +72,9 @@ export default function Home() {
           objectFit: "cover"
         }}
       />
-      <p>Team Member 2</p>
+      <p>Muhammad Asim</p>
     </div>
-
   </div>
-</main>
-    
-    );
-}
+</div>
 
 // ...existing code...
